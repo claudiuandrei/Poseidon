@@ -2,7 +2,7 @@
 /**
  * Wrapper for the API authentication token
  *
- * @package    Poken
+ * @package    Poseidon
  * @category   API
  * @author     Claudiu Andrei
  */

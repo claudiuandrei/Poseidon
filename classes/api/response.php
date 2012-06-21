@@ -2,7 +2,7 @@
 /**
  * Wrapper for the API response, prepares the response for easy use and returns it to the API handler
  *
- * @package    Poken
+ * @package    Poseidon
  * @category   API
  * @author     Claudiu Andrei
  */

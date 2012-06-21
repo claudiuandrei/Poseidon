@@ -2,7 +2,7 @@
 /**
  * Wrapper for the API request, sends the request and returns a API response object
  *
- * @package    Poken
+ * @package    Poseidon
  * @category   API
  * @author     Claudiu Andrei
  */
@@ -78,6 +78,11 @@ class API_Request {
 		
 		// Set the parameters
 		$this->parameters = $parameters;
+		
+		// Set the content type
+		if ($method === Request::POST) {
+			$this->headers = array('Content-Type: application/x-www-form-urlencoded');
+		}
 		
 		// Return the modified object
 		return $this;

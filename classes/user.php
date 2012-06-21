@@ -2,7 +2,7 @@
 /**
  * User class, we keep the basic user information here
  *
- * @package    Poken
+ * @package    Poseidon
  * @category   User
  * @author     Claudiu Andrei
  */
@@ -70,7 +70,7 @@ class User {
 	/**
 	 * Log the user in
 	 *
-	 *     $user->connect(API_Token::PASSWORD, array('username' => 'John', 'password' => 'pass'));
+	 *     $user->connect(Token::PASSWORD, array('username' => 'John', 'password' => 'pass'));
 	 *
 	 * @param   string  Access type method
 	 * @param   array   Access request parameters

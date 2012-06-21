@@ -2,10 +2,9 @@
 /**
  * API client library, handles the API communication logic
  *
- * @package    Poken
+ * @package    Poseidon
  * @category   API
  * @author     Claudiu Andrei
- * @copyright  (c) 2011-2012 Poken
  */
 class API {
 	
