@@ -39,7 +39,7 @@ class API {
 	/**
 	 * @var  string  API response format
 	 */
-	protected $format;
+	protected $format = 'json';
 	
 	/**
 	 * Get singleton api client instance
@@ -70,9 +70,6 @@ class API {
 		
 		// Set the path
 		$this->path(trim($options['path'], '/') . '/');
-		
-		// Set the format
-		$this->format($options['format']);
 		
 		// Setup the default token
 		$this->authenticate(User::instance()->authenticated());
@@ -258,30 +255,6 @@ class API {
 		
 		// Set a new secret key
 		$this->secret = $secret;
-		
-		// Return the modified API object
-		return $this;
-	}
-	
-	/**
-	 * Set/get the application secret
-	 *
-	 *     $client->format('json');
-	 *
-	 * @param  string  Response format
-	 *
-	 * @return  API
-	 */
-	public function format($format = NULL)
-	{
-		// Return the current app secret key
-		if ($format === NULL)
-		{
-			return $this->format;
-		}
-		
-		// Set a new secret key
-		$this->format = $format;
 		
 		// Return the modified API object
 		return $this;

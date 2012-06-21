@@ -3,6 +3,5 @@
 return array(
 	'id'     => '999',
 	'secret' => 'XxXXxX',
-	'path'   => 'https://dev2-api.poken.com/rest081/',
-	'format' => 'json',
+	'path'   => 'https://api.poken.com/rest081/',
 );
